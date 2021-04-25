@@ -30,28 +30,45 @@
 </ul>
 </div>
 
-    <section id="tableinfo">
-    </section>
+    
+    
+<button id="book">Book Now</button>
+<form id="bookingForm" style="display:none;">
+    <!-- Validation isn't working!! i don't know why -->
+    <fieldset>
+        <legend>Make Reservation</legend>
+        <br>
+        <label for ="name">Name : </label>
+        <input type="text" id="name1" required/>
+        <br>
+        <label for="number">Phone Number : </label>
+        <input type="tel" id="number1" pattern="[0-9]{10}" required/>
+        <br>
+        <label>We will contact you within 24 hours</label>
+        <br>
+        <input type="submit" value="reserve" id="reserve"/>
+    </fieldset>
+</form>
+<!-- <section id="confirmation" style="display:none;" >
+    <p id="call" >Thanks. We will contact you within 24 hours to confirm your reservation.</p>
+    <button id="ok">OK</button>
+</section> -->
+</section>
+<section id="tableinfo">
+</section>
 
-
-/
+<!-- 
 <iframe src="qrv.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 <audio id="player" autoplay loop>
     <source src="qrv.mp3" type="audio/mp3">
 </audio>
-    <audio controls autoplay loop>
-        <source src="qrv.mp3" type="audio/ogg">
-        <embed src="qrv.mp3" autostart="true" loop="true" hidden="true"> 
-      </audio>
-      <audio  autoplay>
-        <source src="qrv.mp3"  type="qrv.mp3">
-     
-       </audio>
-</section>
-    
+         -->
+
+
 </main>
 <footer>
-<script src="js.js"></script>
+
 </footer>   
+<script src="js.js"></script>
 </body>
 </html>
